@@ -46,7 +46,7 @@ fastapi_todo/
 ### 1️⃣ Create virtual environment (recommended)
 ```sh
 python -m venv venv
-
+```
 
 2️⃣ Activate environment
 ```sh
