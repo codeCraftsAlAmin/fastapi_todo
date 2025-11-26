@@ -51,15 +51,28 @@ python -m venv venv
 2️⃣ Activate environment
 ```sh
 venv\Scripts\activate
-
+```
 
 3️⃣ Install dependencies
 ```sh
 pip install -r requirements.txt
+```
 
 4️⃣ Run the FastAPI server
 ```sh
 uvicorn main:app --reload
+```
+
+
+### 🛠️ Inside your activated virtual environment:
+```sh
+pip freeze > requirements.txt
+```
+- This command will:
+
+- Collect all installed packages in your venv
+
+- Write them into a file named requirements.txt
 
 
 
