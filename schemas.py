@@ -2,12 +2,13 @@ from pydantic import BaseModel, Field
 
 from datetime import datetime
 
+from model import Status
 
 class TodoBase(BaseModel):
     # id: int 
     title: str = Field(max_length=50)
     description: str = Field(max_length=60)
-    priority: int = Field(gt=0, lt=6, description="1 to 5 priority level")
+    priority: Status = Field(description="pending, processing or complete")
     complete: bool = False
 
 class TodoCreate(TodoBase):
